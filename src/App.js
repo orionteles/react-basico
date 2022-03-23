@@ -8,6 +8,8 @@ function App() {
     <div>
       <Menu />
       <h1>Hello World</h1>
+      <h1>Orion</h1>
+      <h1>Teles</h1>
 
       <Button variant="outline-primary">Primary</Button>
 
