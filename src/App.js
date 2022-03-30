@@ -1,18 +1,30 @@
 import Menu from "./components/Menu";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from "react-bootstrap";
-
+import Carros from "./pages/Carros";
+import Array from "./pages/Array";
+import Objeto from "./pages/Objeto";
+import Pagina1 from "./pages/Pagina1";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <Menu />
-      <h1>Hello World</h1>
-      <h1>Orion</h1>
-      <h1>Teles</h1>
 
-      <Button variant="outline-primary">Primary</Button>
+      <BrowserRouter>
 
+        <Menu />
+
+        <Routes>
+          <Route path="/" element={<Carros />} />
+          <Route path="/carros" element={<Carros />} />
+          <Route path="/array" element={<Array />} />
+          <Route path="/objeto" element={<Objeto />} />
+          <Route path="/pagina1" element={<Pagina1 />} />
+        </Routes>
+
+      </BrowserRouter>
+
+      <h1>Fim da página fixa</h1>
     </div>
   );
 }
