@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Nav, Navbar } from 'react-bootstrap'
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 const Menu = () => {
@@ -13,8 +13,12 @@ const Menu = () => {
             <Link className="nav-link" to="/carros">Carros</Link>
             <Link className="nav-link" to="/array">Array</Link>
             <Link className="nav-link" to="/objeto">Objeto</Link>
-            <Link className="nav-link" to="/pagina1">Página 1</Link>
-            <Link className="nav-link" to="/filmes/populares">Filmes Populares</Link>
+            <Link className="nav-link" to="/pagina1">Página 1</Link>''
+            <NavDropdown title="Dropdown" className="show" id="basic-nav-dropdown">
+              <Link className="dropdown-item" to="/filmes/populares">Filmes Populares</Link>
+              <Link className="dropdown-item" to="/filmes/cartaz">Filmes Cartaz</Link>
+              <Link className="dropdown-item" to="/filmes/lancamento">Filmes Lançamento</Link>
+            </NavDropdown>
           </Nav>
         </Container>
       </Navbar>
