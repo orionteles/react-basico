@@ -14,10 +14,15 @@ const Menu = () => {
             <Link className="nav-link" to="/array">Array</Link>
             <Link className="nav-link" to="/objeto">Objeto</Link>
             <Link className="nav-link" to="/pagina1">Página 1</Link>''
-            <NavDropdown title="Dropdown" className="show" id="basic-nav-dropdown">
-              <Link className="dropdown-item" to="/filmes/populares">Filmes Populares</Link>
-              <Link className="dropdown-item" to="/filmes/cartaz">Filmes Cartaz</Link>
-              <Link className="dropdown-item" to="/filmes/lancamento">Filmes Lançamento</Link>
+            <NavDropdown title="Filmes" className="show" id="basic-nav-dropdown">
+              <Link className="dropdown-item" to="/filmes/populares">Populares</Link>
+              <Link className="dropdown-item" to="/filmes/cartaz">Cartaz</Link>
+              <Link className="dropdown-item" to="/filmes/lancamento">Lançamento</Link>
+            </NavDropdown>
+            <NavDropdown title="Séries de TV" className="show" id="basic-nav-dropdown">
+              <Link className="dropdown-item" to="/series/populares">Populares</Link>
+              <Link className="dropdown-item" to="/series/cartaz">Cartaz</Link>
+              <Link className="dropdown-item" to="/series/lancamento">Lançamento</Link>
             </NavDropdown>
           </Nav>
         </Container>
